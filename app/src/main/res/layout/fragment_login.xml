@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23sp"
+        android:id="@+id/tv_skiplogin"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_lottieAnimationView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splash" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/materialCardView1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:padding="30dp"
+        android:layout_marginStart="16dp"
+
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/termsandconditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnlogin"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/metro"
+                android:text="terms and conditions"
+                android:textAlignment="center"
+                android:textColor="#F50057" />
+
+            <EditText
+                android:id="@+id/etloginemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/border_search"
+                android:fontFamily="@font/metro"
+                android:hint="@string/e_mail"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="13dp"
+                android:textColor="#000"
+                android:theme="@style/AppTheme"
+                tools:Ignore="AutoFill" />
+
+            <EditText
+                android:id="@+id/etloginpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etloginemail"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="13dp"
+                android:background="@drawable/border_search"
+                android:fontFamily="@font/metro"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="13dp"
+                android:textColor="#000"
+                android:theme="@style/AppTheme"
+                tools:Ignore="AutoFill" />
+
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etloginpassword"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="13dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/metro"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_createnewaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create new account"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:fontFamily="@font/metro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView1" />
+
+    <ProgressBar
+        android:id="@+id/loginprogress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="190dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_createnewaccount"
+        app:layout_constraintEnd_toEndOf="@+id/tv_createnewaccount"
+        app:layout_constraintStart_toStartOf="@+id/tv_createnewaccount"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

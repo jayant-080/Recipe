@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Recipe</string>
+    <string name="recipie">Recipie</string>
+    <string name="terms_and_condition">terms_and_condition</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="no_image_chosen">No Image Chosen</string>
+    <string name="create_new_account">create_new_account</string>
+    <string name="username">username</string>
+    <string name="error_password_too_short">The password must be at least %d digits long</string>
+    <string name="error_username_too_short">The username can\'t have less than %d characters</string>
+    <string name="error_username_too_long">The username can\'t have more than %d characters</string>
+    <string name="error_not_a_valid_email">Please enter a valid E-Mail</string>
+    <string name="error_input_empty">The fields must not be empty</string>
+    <string name="error_incorrectly_repeated_password">The passwords do not match</string>
+    <string name="cuisine">cuisine</string>
+    <string name="add_recipie">add recipie</string>
+    <string name="favouriates">favouriates</string>
+    <string name="skip">skip</string>
+    <string name="title_here">title here</string>
+    <string name="add_instructions">add instructions</string>
+    <string name="category_here">category here</string>
+    <string name="favourit_cuisin">favourit cuisin</string>
+    <string name="favourite_recipe">favourite recipe</string>
+    <string name="instructions_here">instructions here</string>
+    <string name="add_comments">add comments</string>
+    <string name="time_require_35_minutes">Time require : 35 minutes</string>
+    <string name="cuisin_name">cuisin name</string>
+    <string name="add">add</string>
+    <string name="require_time_here">require time here</string>
+    <string name="notes_here">notes here</string>
+</resources>

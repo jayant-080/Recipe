@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/cuisineFragment">
+
+    <fragment
+        android:id="@+id/cuisineFragment"
+        android:name="com.jks.recipe.mainUi.fragments.CuisineFragment"
+        android:label="CuisineFragment" >
+        <action
+            android:id="@+id/action_cuisineFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecipiFragment"
+        android:name="com.jks.recipe.mainUi.fragments.AddRecipiFragment"
+        android:label="AddRecipiFragment" />
+    <fragment
+        android:id="@+id/favouriteCuisinFragment"
+        android:name="com.jks.recipe.mainUi.fragments.FavouriteCuisinFragment"
+        android:label="FavouriteCuisinFragment" >
+        <action
+            android:id="@+id/action_favouriteCuisinFragment_to_cuisineFragment"
+            app:destination="@id/cuisineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriateRecipeFragment"
+        android:name="com.jks.recipe.mainUi.fragments.FavouriateRecipeFragment"
+        android:label="FavouriateRecipeFragment" >
+        <action
+            android:id="@+id/action_favouriateRecipeFragment_to_cuisineFragment"
+            app:destination="@id/cuisineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.jks.recipe.mainUi.fragments.SearchFragment"
+        android:label="SearchFragment" />
+</navigation>

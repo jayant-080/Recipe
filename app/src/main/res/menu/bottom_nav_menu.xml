@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/cuisineFragment"
+    android:title="@string/cuisine"
+    android:icon="@drawable/cuisinicon"
+    android:checked="true"/>
+    <item android:id="@+id/addRecipiFragment"
+        android:icon="@drawable/recipe"
+        android:title="@string/add_recipie"
+      />
+    <item android:id="@+id/favouriateRecipeFragment"
+        android:title="@string/favourite_recipe"
+        android:icon="@drawable/favicon"
+       />
+
+    <item android:id="@+id/favouriteCuisinFragment"
+        android:title="@string/favourit_cuisin"
+        android:icon="@drawable/favcuisin"
+        />
+
+
+</menu>
